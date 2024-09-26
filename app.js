@@ -36,12 +36,20 @@ function showSlider(){
     // active new item
     items[itemActive].classList.add('active');
     thumbnails[itemActive].classList.add('active');
+    setPositionThumbnail();
 
     // clear auto time run slider
     clearInterval(refreshInterval);
     refreshInterval = setInterval(() => {
         next.click();
     }, 5000)
+}
+function setPositionThumbnail () {
+    let thumbnailActive = document.querySelector('.thumbnail .item.active');
+    let rect = thumbnailActive.getBoundingClientRect();
+    if (rect.left < 0 || rect.right > window.innerWidth) {
+        thumbnailActive.scrollIntoView({ behavior: 'smooth', inline: 'nearest' });
+    }
 }
 
 // click thumbnail
