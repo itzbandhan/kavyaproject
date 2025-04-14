@@ -1,129 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-        <!-- header -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team BSM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="gsap/style.css" />
+    <meta
+      name="description"
+      content="Team BSM, BSM, Bandhan, Pokhrel, food website, kavya school +2 web project, kavya +2, kavya school +2"
+    />
+    <meta
+      name="keywords"
+      content="Team BSM, BSM, Bandhan, Pokhrel, food website, kavya school +2 web project, kavya +2, kavya school +2"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://static.vecteezy.com/system/resources/previews/022/917/027/non_2x/yellow-happy-smile-face-emoticon-png.png"
+      type="image/x-icon"
+    />
+    <script src="gsap/app.js"></script>
+    <link rel="stylesheet" href="gsap/locomotive-styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  </head>
+  <body>
+    <div class="cursor"></div>
     <header>
-        <div class="logo">Lundev</div>
-        <ul class="menu">
-            <li>Home</li>
-            <li>Blog</li>
-            <li>Info</li>
-        </ul>
-        <div class="search">
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-            </svg>
-        </div>
+      <div class="logo">BSM</div>
+      <!-- <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="search">
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 20 20"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+          />
+        </svg>
+      </div> -->
     </header>
 
-    <!-- slider -->
-
-    <div class="slider">
-        <!-- list Items -->
-        <div class="list">
-            <div class="item active">
-                <img src="image/img1.png">
-                <div class="content">
-                    <p>design</p>
-                    <h2>Slider 01</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="image/img2.jpg">
-                <div class="content">
-                    <p>design</p>
-                    <h2>Slider 02</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="image/img3.jpg">
-                <div class="content">
-                    <p>design</p>
-                    <h2>Slider 03</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="image/img4.jpg">
-                <div class="content">
-                    <p>design</p>
-                    <h2>Slider 04</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="image/img5.jpg">
-                <div class="content">
-                    <p>design</p>
-                    <h2>Slider 05</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                    </p>
-                </div>
-            </div>
+    <div class="slider" id="home smooth-scroll">
+      <!-- list Items -->
+      <div class="list">
+        <div class="item active">
+          <img src="img/food1.jpg" />
+          <div class="content">
+            <p>Crêpes du Soleil</p>
+            <h2>Pancakes</h2>
+            <p>
+              Sun-kissed French crêpes with a whisper of vanilla and a touch of
+              citrus zest.
+            </p>
+          </div>
         </div>
-        <!-- button arrows -->
-        <div class="arrows">
-            <button id="prev"><</button>
-            <button id="next">></button>
+        <div class="item">
+          <img src="img/food2.jpg" />
+          <div class="content">
+            <p>Le Boeuf Impérial</p>
+            <h2>Burger</h2>
+            <p>
+              Gold-leaf seared prime rib burger with bone marrow butter and
+              shallot confit.
+            </p>
+          </div>
         </div>
-        <!-- thumbnail -->
-        <div class="thumbnail">
-            <div class="item active">
-                <img src="image/img1.png">
-                <div class="content">
-                    Name Slider
-                </div>
-            </div>
-            <div class="item">
-                <img src="image/img2.jpg">
-                <div class="content">
-                    Name Slider
-                </div>
-            </div>
-            <div class="item">
-                <img src="image/img3.jpg">
-                <div class="content">
-                    Name Slider
-                </div>
-            </div>
-            <div class="item">
-                <img src="image/img4.jpg">
-                <div class="content">
-                    Name Slider
-                </div>
-            </div>
-            <div class="item">
-                <img src="image/img5.jpg">
-                <div class="content">
-                    Name Slider
-                </div>
-            </div>
+        <div class="item">
+          <img src="img/food3.jpg" />
+          <div class="content">
+            <p>Brioche & Brass</p>
+            <h2>Combo</h2>
+            <p>
+              Chargrilled sirloin burger on brioche with bourbon-glazed onions,
+              served alongside duck fat fries and garlic confit dip.
+            </p>
+          </div>
         </div>
+        <div class="item">
+          <img src="img/food4.jpg" />
+          <div class="content">
+            <p>design</p>
+            <h2>Slider 04</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+              neque? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Ipsum, ex.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/food5.jpg" />
+          <div class="content">
+            <p>design</p>
+            <h2>Slider 05</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+              neque? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Ipsum, ex.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- button arrows -->
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+      <!-- thumbnail -->
+      <div class="thumbnail">
+        <div class="item active">
+          <img src="img/food1.jpg" />
+          <div class="content">Dessert</div>
+        </div>
+        <div class="item">
+          <img src="img/food2.jpg" />
+          <div class="content">Name Slider</div>
+        </div>
+        <div class="item">
+          <img src="img/food3.jpg" />
+          <div class="content">Name Slider</div>
+        </div>
+        <div class="item">
+          <img src="img/food4.jpg" />
+          <div class="content">Name Slider</div>
+        </div>
+        <div class="item">
+          <img src="img/food5.jpg" />
+          <div class="content">Name Slider</div>
+        </div>
+      </div>
     </div>
 
+    <section class="content-section" id="smooth-scroll">
+      <div class="container" data-scroll-container>
+        <h2 id="revealHeading">Fast, Fresh, and Flavoursome</h2>
+        <p id="revealParagraph1">
+          BSM is your go-to destination for mouthwatering meals, delivered right
+          to your doorstep with love and speed. Whether you're craving homestyle
+          comfort food or bold new flavors, BSM brings together the best of both
+          worlds with a diverse menu designed to satisfy every appetite.
+        </p>
+        <p id="revealParagraph2">
+          With a focus on fresh ingredients, bold seasoning, and consistent
+          quality, every dish is crafted to deliver a flavorful experience you
+          won’t forget. Perfect for busy weekdays, family dinners, or late-night
+          cravings, BSM is here to make every meal memorable.
+        </p>
+        <button class="button" id="revealButton">See Menu</button>
+      </div>
+    </section>
+
+    <section
+      class="horizontal-scroll-section"
+      id="smooth-scroll"
+      data-scroll-section
+    >
+      <div class="horizontal-scroll-container">
+        <div class="horizontal-scroll-track">
+          <div class="scroll-item">
+            <img
+              src="https://images.unsplash.com/photo-1604908177453-7462950a6a3b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zm9vZCUyMG1lbnV8ZW58MHx8MHx8fDA%3D"
+              alt="Nature"
+            />
+          </div>
+          <div class="scroll-item">
+            <img
+              src="https://images.unsplash.com/photo-1654796605330-8a1248a2cb07?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZvb2QlMjBtZW51fGVufDB8fDB8fHww"
+              alt="City"
+            />
+          </div>
+          <div class="scroll-item">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1661265874417-f9a2f1981eda?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZCUyMG1lbnV8ZW58MHx8MHx8fDA%3D"
+              alt="Architecture"
+            />
+          </div>
+          <div class="scroll-item">
+            <img
+              src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZCUyMGFuZCUyMGRyaW5rfGVufDB8fDB8fHww"
+              alt="Technology"
+            />
+          </div>
+          <div class="scroll-item">
+            <img
+              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFzdCUyMGZvb2R8ZW58MHx8MHx8fDA%3D"
+              alt="Art"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="image-text-section">
+      <div class="container">
+        <div class="image-text-content">
+          <div class="text-content">
+            <h2>Discover Our Creative Process</h2>
+            <p>
+              We combine innovative design with cutting-edge technology to
+              deliver exceptional results. Our team works tirelessly to bring
+              your vision to life.
+            </p>
+            <p>
+              Every project begins with research and ends with perfection. See
+              how we transform ideas into reality through our unique creative
+              process.
+            </p>
+            <a href="#" class="fancy-button">Learn More</a>
+          </div>
+          <div class="image-content">
+            <div class="image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1572715376701-98568319fd0b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hlZnxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Creative Process"
+                class="reveal-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-section">
+      <div class="container">
+        <h2 class="timeline-heading">Our Journey</h2>
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+              <h3>2015 - Foundation</h3>
+              <p>
+                Established with a vision to revolutionize digital experiences.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+              <h3>2018 - Breakthrough</h3>
+              <p>
+                Launched our flagship product that changed industry standards.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+              <h3>2020 - Expansion</h3>
+              <p>Opened international offices across 3 continents.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+              <h3>2025 - Innovation</h3>
+              <p>Pioneered AI integration in our creative workflows.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="smooth-scroll">
+      <div class="description panel blue">
+        <div>
+          <h1>Locomotive Scroll + ScrollTrigger</h1>
+          <p>
+            Demonstrates how ScrollTrigger can be used with a smooth scrolling
+            library like Locomotive Scroll, including scrubbing and pinning.
+          </p>
+          <div class="scroll-down">
+            Scroll down
+            <div class="arrow"></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="panel red">
+        <p>
+          <span class="line line-1"></span>This line's animation will begin when
+          it enters the viewport and finish when its top edge hits the top of
+          the viewport, staying perfectly in sync with the scrollbar because it
+          has <code>scrub:&nbsp;true</code>
+        </p>
+      </section>
+
+      <section class="panel orange">
+        <p>
+          <span class="line line-2"></span>This orange panel gets pinned when
+          its top edge hits the top of the viewport, then the line's animation
+          is linked with the scroll position until it has traveled 100% of the
+          viewport's height (<code>end: "+=100%"</code>), then the orange panel
+          is unpinned and normal scrolling resumes. Padding is added
+          automatically to push the rest of the content down so that it catches
+          up with the scroll when it unpins. You can set
+          <code>pinSpacing: false</code> to prevent that if you prefer.
+        </p>
+      </section>
+
+      <section class="panel purple">
+        <p>
+          <span class="line line-3"></span>This panel gets pinned in a similar
+          way, and has a more involved animation that's wrapped in a timeline,
+          fading the background color and animating the transforms of the
+          paragraph in addition to the line, all synced with the scroll position
+          perfectly.
+        </p>
+      </section>
+
+      <section class="panel gray">DONE!</section>
+    </div> -->
+    <footer>
+      <button
+        class="back-to-top"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 15l7-7 7 7"
+          />
+        </svg>
+      </button>
+
+      <div class="footer-container">
+        <div class="footer-links">
+          <a href="https://instagram.com/_bandhann" target="_blank"
+            >Instagram</a
+          >
+          <a href="https://facebook.com/bandhanpokhrel01" target="_blank"
+            >Facebook</a
+          >
+        </div>
+
+        <div class="social-links">
+          <a
+            href="https://instagram.com/_bandhann"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://facebook.com/bandhanpokhrel01"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <p class="copyright">© 2025 Team BSM. All rights reserved.</p>
+      </div>
+    </footer>
 
     <script src="app.js"></script>
-</body>
+
+    <script>
+      alert(
+        "This is a new project made within a day as our previous project files were corrupted and we had to work from a compelete start. "
+      );
+      const backToTop = document.querySelector(".back-to-top");
+      const toggleBackToTop = () => {
+        if (window.scrollY > 300) {
+          backToTop.classList.add("visible");
+        } else {
+          backToTop.classList.remove("visible");
+        }
+      };
+      
+
+      window.addEventListener("scroll", toggleBackToTop);
+      toggleBackToTop();
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+      // gsap.registerPlugin(ScrollTrigger);
+
+      // function setupSmoothScrolling() {
+      //   const container = document.querySelector("body");
+
+      // let height;
+      // function setHeight() {
+      //   height = container.scrollHeight;
+      //   document.body.style.height = height + "px";
+      // }
+
+      ScrollTrigger.addEventListener("refreshInit", setHeight);
+      setHeight();
+
+      gsap.to(container, {
+        y: () => -(height - document.documentElement.clientHeight),
+        ease: "none",
+        scrollTrigger: {
+          trigger: document.body,
+          start: "top top",
+          end: "bottom bottom",
+          scrub: 2,
+          invalidateOnRefresh: true,
+        },
+      });
+
+      window.addEventListener("load", setupSmoothScrolling);
+
+      document.addEventListener("DOMContentLoaded", function () {
+        gsap.registerPlugin(ScrollTrigger);
+
+        function splitText(element) {
+          const text = element.innerText;
+          element.innerHTML = "";
+
+          const words = text.split(" ");
+          words.forEach((word) => {
+            const wordSpan = document.createElement("span");
+            wordSpan.className = "word";
+
+            const chars = word.split("");
+            chars.forEach((char) => {
+              const charSpan = document.createElement("span");
+              charSpan.className = "char";
+              charSpan.innerText = char;
+              wordSpan.appendChild(charSpan);
+            });
+
+            if (word !== words[words.length - 1]) {
+              const spaceSpan = document.createElement("span");
+              spaceSpan.className = "char";
+              spaceSpan.innerHTML = "&nbsp;";
+              wordSpan.appendChild(spaceSpan);
+            }
+
+            element.appendChild(wordSpan);
+          });
+        }
+
+        const title = document.getElementById("animatedTitle");
+        splitText(title);
+
+        gsap.to(title.querySelectorAll(".char"), {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          ease: "power3.out",
+          stagger: 0.03,
+          delay: 0.2,
+        });
+
+        const revealElements = [
+          document.getElementById("revealHeading"),
+          document.getElementById("revealParagraph1"),
+          document.getElementById("revealParagraph2"),
+          document.getElementById("revealButton"),
+        ];
+
+        revealElements.forEach((el, index) => {
+          gsap.from(el, {
+            scrollTrigger: {
+              trigger: el,
+              start: "top 80%",
+              toggleActions: "play none none none",
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            ease: "back.out(1.2)",
+            delay: index * 0.2,
+          });
+        });
+
+        const heading = document.getElementById("revealHeading");
+        splitText(heading);
+
+        gsap.to(heading.querySelectorAll(".char"), {
+          scrollTrigger: {
+            trigger: heading,
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          y: 0,
+          opacity: 1,
+          duration: 0.6,
+          ease: "back.out(1.2)",
+          stagger: 0.03,
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        function animateOnScroll() {
+          const elements = document.querySelectorAll(
+            ".content-section h2, .content-section p, .content-section .fancy-button"
+          );
+
+          elements.forEach((el, index) => {
+            const elementPosition = el.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.2;
+
+            if (elementPosition < screenPosition) {
+              el.classList.add("reveal-animate");
+              el.classList.add(`delay-${index + 1}`);
+            }
+          });
+        }
+
+        window.addEventListener("load", animateOnScroll);
+        window.addEventListener("scroll", animateOnScroll);
+        animateOnScroll();
+      });
+    </script>
+  </body>
 </html>
